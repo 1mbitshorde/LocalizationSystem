@@ -1,14 +1,21 @@
 # Localization System
 
-* This package contains scripts and tools for Localization.
+* Scripts and tools for Localization.
 
 ## Summary
 
-[...]
+This package has some tools to facilitate Unity development with localization.
+It uses the Unity Localization and Addressables packages as dependencies.
 
 ## How To Use
 
-### Using [...]
+### Using Tool Find Translation Tables
+
+You can quickly find the Translations Tables in your project by going to **OneM > Find > Localization Folder**.
+
+### Using LocalizationManager
+
+Use the static [LocalizationManager](/Runtime/LocalizationManager.cs) class to handle code logic.
 
 ## Installation
 
