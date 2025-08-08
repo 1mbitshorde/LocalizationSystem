@@ -1,19 +1,19 @@
 {
-  "name": "com.1mbitshorde.[packagename]",
-  "displayName": "1M Bits Horde-[PackageName]",
+  "name": "com.1mbitshorde.localization-system",
+  "displayName": "1M Bits Horde-Localization System",
   "version": "0.1.0",
   "unity": "6000.1",
-  "description": "This package contains [...].",
+  "description": "This package contains scripts and tools for Localization.",
   "keywords": [
-    "",
-    ""
+    "Localization",
+    "Internationalization"
   ],
   "dependencies": {},
-  "homepage": "https://github.com/1mbitshorde/[PACKAGE]#readme",
+  "homepage": "https://github.com/1mbitshorde/LocalizationSystem#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/1mbitshorde/[PACKAGE].git"
+    "url": "https://github.com/1mbitshorde/LocalizationSystem.git"
   },
-  "documentationUrl": "https://github.com/1mbitshorde/[PACKAGE]#readme",
-  "changelogUrl": "https://github.com/1mbitshorde/[PACKAGE]/CHANGELOG.md"
+  "documentationUrl": "https://github.com/1mbitshorde/LocalizationSystem#readme",
+  "changelogUrl": "https://github.com/1mbitshorde/LocalizationSystem/CHANGELOG.md"
 }

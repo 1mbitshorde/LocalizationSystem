@@ -1,6 +1,6 @@
-# [PackageName]
+# Localization System
 
-* [ShortDescription]
+* This package contains scripts and tools for Localization.
 
 ## Summary
 
