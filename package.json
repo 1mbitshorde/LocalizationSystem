@@ -9,6 +9,7 @@
     "Internationalization"
   ],
   "dependencies": {
+    "com.unity.addressables": "2.6.0",
     "com.unity.localization": "1.5.7"
   },
   "homepage": "https://github.com/1mbitshorde/LocalizationSystem#readme",
