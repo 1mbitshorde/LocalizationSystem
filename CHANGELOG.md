@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.1.0] - 2025-01-01
 ### Added
+- Dependency to Unity Localization package
 - Static LocalizationManager class
 - Find Translation Tables Folder editor Tool
 - CHANGELOG

@@ -8,7 +8,9 @@
     "Localization",
     "Internationalization"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "com.unity.localization": "1.5.7"
+  },
   "homepage": "https://github.com/1mbitshorde/LocalizationSystem#readme",
   "repository": {
     "type": "git",
