@@ -1,7 +1,7 @@
 {
   "name": "com.1mbitshorde.localization-system",
   "displayName": "1MBH-Localization System",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "6000.1",
   "description": "This package contains scripts and tools for Localization.",
   "keywords": [
