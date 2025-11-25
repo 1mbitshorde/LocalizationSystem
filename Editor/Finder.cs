@@ -8,7 +8,7 @@ namespace ActionCode.LocalizationSystem.Editor
     /// </summary>
     public static class Finder
     {
-        [MenuItem("Tools/Find/Localization Folder")]
+        [MenuItem("Tools/OneM/Find/Localization Folder")]
         private static void FindLocalizationFolder() => FindFirstAsset("StringTableCollection");
 
         public static void FindFirstAsset(string type)
