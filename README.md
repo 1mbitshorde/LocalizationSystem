@@ -5,8 +5,9 @@
 * Current version: **1.5.0**
 * License: **MIT**
 * Dependencies:
-	- [com.unity.localization : 1.5.8](https://docs.unity3d.com/Packages/com.unity.localization@1.5/changelog/CHANGELOG.html#158---2025-09-26)
 	- [com.actioncode.game-data-system : 0.5.1](https://github.com/HyagoOliveira/GameDataSystem#0.5.1)
+	- [com.unity.localization : 1.5.8](https://docs.unity3d.com/Packages/com.unity.localization@1.5/changelog/CHANGELOG.html#158---2025-09-26)
+	- [com.unity.ugui : 2.0.0](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/changelog/CHANGELOG.html)	
 
 ## Summary
 

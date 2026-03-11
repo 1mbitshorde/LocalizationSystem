@@ -8,8 +8,9 @@
     "Localization"
   ],
   "dependencies": {
+    "com.actioncode.game-data-system": "0.5.1",
     "com.unity.localization": "1.5.8",
-    "com.actioncode.game-data-system": "0.5.1"
+    "com.unity.ugui": "2.0.0"
   },
   "license": "MIT",
   "homepage": "https://github.com/HyagoOliveira/LocalizationSystem#readme",
