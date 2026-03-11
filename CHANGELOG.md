@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - TextMesh Pro dependency
+- ActionCode UI System dependency
 
 ## [1.5.0] - 2025-11-25
 ### Added
