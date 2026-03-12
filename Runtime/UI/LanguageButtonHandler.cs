@@ -7,11 +7,11 @@ using ActionCode.UISystem;
 namespace ActionCode.LocalizationSystem
 {
     [DisallowMultipleComponent]
-    [RequireComponent(typeof(ButtonHandler))]
+    [RequireComponent(typeof(ActionButton))]
     public sealed class LanguageButtonHandler : MonoBehaviour
     {
-        [SerializeField] private ButtonHandler button;
         [SerializeField] private TMP_Text label;
+        [SerializeField] private ActionButton button;
 
         public event Action<Locale> OnSelected;
         public event Action<Locale> OnConfirmed;
@@ -32,17 +32,17 @@ namespace ActionCode.LocalizationSystem
 
         private void Bind()
         {
-            button.OnSubmitted += HandleSubmition;
-            button.Selection.OnSelected += HandleSelection;
+            button.OnClicked += HandleClicked;
+            button.OnSelected += HandleSelection;
         }
 
         private void Unbind()
         {
-            button.OnSubmitted -= HandleSubmition;
-            button.Selection.OnSelected -= HandleSelection;
+            button.OnClicked -= HandleClicked;
+            button.OnSelected -= HandleSelection;
         }
 
-        private void HandleSubmition()
+        private void HandleClicked()
         {
             if (locale) OnConfirmed?.Invoke(locale);
         }

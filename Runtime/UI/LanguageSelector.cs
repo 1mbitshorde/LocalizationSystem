@@ -1,14 +1,18 @@
-using ActionCode.UISystem;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
+using System.Collections.Generic;
+using ActionCode.UISystem;
 
 namespace ActionCode.LocalizationSystem
 {
     [DisallowMultipleComponent]
+    [RequireComponent(typeof(CanvasGroup))]
+    [RequireComponent(typeof(AudioHandler))]
     public sealed class LanguageSelector : MonoBehaviour
     {
+        [SerializeField] private CanvasGroup group;
+        [SerializeField] private AudioHandler audioHandler;
         [SerializeField] private ListController languages;
 
         [Space]
@@ -31,6 +35,9 @@ namespace ActionCode.LocalizationSystem
 
         private async void PopulateLanguageButtons()
         {
+            SetGroupEnabled(false);
+            audioHandler.UnbindElements();
+
             var locales = await LocalizationManager.GetLocalesAsync();
             var selectedIndex = LocalizationManager.GetLocaleIndex(locales);
 
@@ -47,7 +54,15 @@ namespace ActionCode.LocalizationSystem
                 buttons.Add(button);
             }
 
+            SetGroupEnabled(true);
             languages.Select(selectedIndex);
+            audioHandler.BindElements(transform);
+        }
+
+        private void SetGroupEnabled(bool isEnabled)
+        {
+            group.interactable = isEnabled;
+            group.alpha = isEnabled ? 1f : 0f;
         }
 
         private void BindButton(LanguageButtonHandler button)
@@ -62,9 +77,9 @@ namespace ActionCode.LocalizationSystem
             button.OnSelected -= HandleLanguageSelected;
         }
 
-
         private void HandleLanguageConfirmed(Locale locale)
         {
+            group.interactable = false;
             LocalizationManager.Select(locale);
             OnLanguageConfirmed?.Invoke();
         }
