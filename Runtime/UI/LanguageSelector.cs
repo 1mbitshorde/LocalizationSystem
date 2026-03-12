@@ -21,6 +21,12 @@ namespace ActionCode.LocalizationSystem
 
         private readonly List<LanguageButtonHandler> buttons = new();
 
+        private void Reset()
+        {
+            group = GetComponent<CanvasGroup>();
+            audioHandler = GetComponent<AudioHandler>();
+        }
+
         private void OnEnable() => PopulateLanguageButtons();
         private void OnDisable() => Dispose();
 
