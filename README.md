@@ -2,7 +2,7 @@
 
 * Scripts and tools for Localization.
 * Unity minimum version: **6000.1**
-* Current version: **1.5.0**
+* Current version: **1.6.0**
 * License: **MIT**
 * Dependencies:
 	- [com.actioncode.game-data-system : 0.5.1](https://github.com/HyagoOliveira/GameDataSystem#0.5.1)
